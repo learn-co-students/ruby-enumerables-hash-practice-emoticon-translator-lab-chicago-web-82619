@@ -11,9 +11,9 @@ def load_library(emoticons)
         sorted = {
           get_meaning: {},
           get_emoticon: {
-            # symbols[1]
           }
         }
+        sorted[:get_emoticon] = symbols[1]
 # binding.pry
       # end
     end
