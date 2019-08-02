@@ -37,7 +37,7 @@ def get_english_meaning(emoticons, emoticon)
     trans_emote = nil
     new_lib.each do |name, props|
       props.each do |emote|
-        # binding.pry
+        binding.pry
         if props.include?(emoticon)
            trans_emote = emote[1]
         end
