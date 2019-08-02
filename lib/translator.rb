@@ -7,14 +7,16 @@ def load_library(emoticons)
     loaded_emoticons = YAML.load_file(emoticons)
     sorted = {}
     loaded_emoticons.each do |word, symbols|
-      symbols.each do |a_e, j_e|
+      # symbols.each do |a_e|
         sorted = {
           get_meaning: {},
-          get_emoticon: {}
+          get_emoticon: {
+            
+          }
         }
       
 binding.pry
-      end
+      # end
     end
     sorted
 end
