@@ -5,9 +5,12 @@ require "yaml"
 
 def load_library(emoticons)
     loaded_emoticons = YAML.load_file(emoticons)
-    sorted = []
+    sorted = {}
     loaded_emoticons.each do |word, symbols|
-      sorted << {get_meaning: word}
+      sorted = {
+        get_meaning: word,
+        get_emoticon: symbols
+      }
 # binding.pry
 
     end
