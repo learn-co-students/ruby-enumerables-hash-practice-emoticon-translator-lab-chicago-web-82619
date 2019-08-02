@@ -35,13 +35,11 @@ end
 def get_english_meaning(emoticons, emoticon)
     new_lib = load_library(emoticons)
     trans_emote = nil
-    new_lib.each do |name, props|
-      props.each do |emote|
-        binding.pry
-        if props.include?(emoticon)
-           trans_emote = emote[1]
+    new_lib[:get_meaning].each do |name, props|
+      # binding.pry
+        if name.include?(emoticon)
+           trans_emote = props
         end
-      end
     end
     trans_emote ? trans_emote : "Sorry, that emoticon was not found"
 end
