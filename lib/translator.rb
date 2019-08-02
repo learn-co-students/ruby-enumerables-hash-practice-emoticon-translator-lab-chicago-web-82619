@@ -11,11 +11,10 @@ def load_library(emoticons)
         sorted = {
           get_meaning: {},
           get_emoticon: {
-            symbols[1]
+            # symbols[1]
           }
         }
-      
-binding.pry
+# binding.pry
       # end
     end
     sorted
