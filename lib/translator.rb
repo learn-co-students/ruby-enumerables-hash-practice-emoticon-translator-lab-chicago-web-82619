@@ -8,10 +8,10 @@ def load_library(emoticons)
     sorted = {}
     loaded_emoticons.each do |word, symbols|
       sorted = {
-        get_meaning: word,
-        get_emoticon: symbols
+        get_meaning: {word},
+        get_emoticon: {symbols}
       }
-# binding.pry
+binding.pry
 
     end
 end
