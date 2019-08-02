@@ -7,16 +7,25 @@ def load_library(emoticons)
     loaded_emoticons = YAML.load_file(emoticons)
     sorted = {}
     loaded_emoticons.each do |word, symbols|
-      sorted = {
-        get_meaning: {},
-        get_emoticon: {}
-      }
-      sorted[:get_meaning] = {
-        word
-      }
-binding.pry
-
+      symbols.each do |a_e, j_e|
+        sorted = {
+          get_meaning: {},
+          get_emoticon: {}
+        }
+      
+# binding.pry
+      end
     end
+    sorted
+end
+
+def get_japanese_emoticon
+  # code goes here
+end
+
+def get_english_meaning
+  # code goes here
+end
 end
 
 def get_japanese_emoticon
