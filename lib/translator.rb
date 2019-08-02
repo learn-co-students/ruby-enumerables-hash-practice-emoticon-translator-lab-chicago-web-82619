@@ -13,7 +13,7 @@ def load_library(emoticons)
           get_emoticon: {}
         }
       
-# binding.pry
+binding.pry
       # end
     end
     sorted
